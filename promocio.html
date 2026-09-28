@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos de Programación</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script defer src="./js/app.js"></script>
+</head>
+
+<body>
+    <main>
+        <section id="lista-cursos">
+
+            <article data-id="1" data-price="50" class="card">
+                <div class="card-header">
+                    <img src="./img/react.jpg" alt="" />
+                </div>
+                <div class="card-body">
+                    <p class="name-course">Curso React JS</p>
+                    <p class="price-tag"><i class="fa-solid fa-tag"></i> 50€</p>
+
+                </div>
+                <button class="btn-add">
+                    <i class="fa-solid fa-cart-plus"></i> Seleccionar
+                </button>
+            </article>
+
+            <article data-id="2" data-price="50" class="card">
+                <div class="card-header">
+                    <img src="./img/angular.png" alt="" />
+                </div>
+                <div class="card-body">
+                    <p class="name-course">Curso Angular</p>
+                    <p class="price-tag"><i class="fa-solid fa-tag"></i> 50€</p>
+                </div>
+                <button class="btn-add">
+                    <i class="fa-solid fa-cart-plus"></i> Seleccionar
+                </button>
+            </article>
+
+            <article data-id="3" data-price="50" class="card">
+                <div class="card-header">
+                    <img src="./img/vue.webp" alt="" />
+                </div>
+                <div class="card-body">
+                    <p class="name-course">Curso Vue</p>
+                    <p class="price-tag"><i class="fa-solid fa-tag"></i> 50€</p>
+
+                </div>
+                <button class="btn-add">
+                    <i class="fa-solid fa-cart-plus"></i> Seleccionar
+                </button>
+            </article>
+        </section>
+
+        <aside>
+            <section id="carrito">
+                <div class="cart-header">
+                    <i class="fa-solid fa-basket-shopping fa-lg"></i>
+                    <h3>Resumen</h3>
+                </div>
+
+                <h5 id="product-name">Curso seleccionado</h5>
+                <h2 class="price-display"><span id="product-price">0</span>€</h2>
+
+                <div class="input-group">
+                    <i class="fa-solid fa-ticket"></i>
+                    <input type="text" name="promocion" id="promocion" placeholder="CÓDIGO PROMO">
+                </div>
+
+                <button type="button" id="btn-descuento">
+                    Aplicar Descuento
+                </button>
+
+                <p id="contenedor-precio-final" class="precio-final"></p>
+            </section>
+        </aside>
+    </main>
+
+</body>
+
+</html>
